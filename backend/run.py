@@ -11,7 +11,7 @@ def main():
     
     uvicorn.run(
         "app.main:app",
-        host="127.0.0.1",  # Changed qqqqto qqqqto qqqqto localhost for Windows compatibility
+        host="127.0.0.1",  # Changed to localhost for Windows compatibility
         port=8080,
         reload=False,  # Disabled reload to avoid Windows multiprocessing issues
         log_level="info"
